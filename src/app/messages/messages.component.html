@@ -1,0 +1,15 @@
+<br />
+<div class="container">
+  <mat-form-field>
+    <i class="material-icons">
+      search
+    </i>
+    <input matInput placeholder="search for item.." [(ngModel)]="searchInput" />
+  </mat-form-field>
+</div>
+<br />
+<mat-spinner *ngIf="isLoading && messages.length === 0"></mat-spinner>
+<div id="messages" *ngFor="let msg of messages | messageFilter: searchInput">
+  <app-single-message [user]="user" [msg]="msg"></app-single-message>
+</div>
+<br />

@@ -1,0 +1,30 @@
+#messages {
+  display: grid;
+}
+
+app-single-message {
+  display: grid;
+  justify-items: center;
+}
+
+.container {
+  text-align: center;
+}
+
+mat-spinner {
+  margin: 0 auto;
+}
+
+.mat-app-background {
+  text-align: center;
+}
+
+.material-icons {
+  position: absolute;
+  top: 0;
+  left: -14%;
+}
+
+.mat-form-field-flex {
+  padding-left: 14% !important;
+}

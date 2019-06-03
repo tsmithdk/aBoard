@@ -1,0 +1,22 @@
+img {
+  max-width: 15vw;
+}
+
+mat-card {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+mat-card-header {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+mat-card-title.mat-card-title {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+/*# sourceMappingURL=user-profile.component.css.map */

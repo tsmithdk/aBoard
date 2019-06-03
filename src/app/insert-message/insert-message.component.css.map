@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,QAAQ,AAAA,oBAAoB,AAAA,SAAS,CAAC;EACpC,OAAO,EAAE,IAAI;EACb,aAAa,EAAE,MAAM;EACrB,KAAK,EAAE,IAAI;CACZ;;AACD,AAAA,GAAG,AAAA,uBAAuB,CAAC;EACzB,KAAK,EAAE,IAAI;CACZ;;AAED,AAAA,WAAW,CAAC;EACV,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "insert-message.component.scss"
+    ],
+    "names": [],
+    "file": "insert-message.component.css"
+}

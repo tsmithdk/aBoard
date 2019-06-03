@@ -1,0 +1,20 @@
+.example-fill-remaining-space {
+  /* This fills the remaining space, by using flexbox. 
+       Every toolbar row uses a flexbox row layout. */
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+mat-toolbar button {
+  margin-left: 10px;
+}
+
+#home {
+  cursor: pointer;
+}
+
+#home:hover {
+  color: lightcoral;
+}
+/*# sourceMappingURL=app.component.css.map */

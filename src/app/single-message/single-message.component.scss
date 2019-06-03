@@ -1,0 +1,52 @@
+mat-card {
+    margin-top: 10px;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr 1fr ;
+    grid-column-gap: 2rem;
+  }
+
+
+  
+  .profileImg {
+    max-width: 5vw;
+    overflow: hidden;
+    align-self: center;
+  }
+
+  .messageImg {
+    width: 100%;
+    overflow: hidden;
+    align-self: center;
+    justify-self: center;
+  }
+  
+  .mat-button {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  .mat-card-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+    .mat-button,
+    .mat-card-actions .mat-raised-button {
+      margin: 0;
+    }
+  }
+
+  .username {
+ 
+        display: grid;
+        width: 100%;
+        cursor: pointer;
+    
+  }
+
+  .mat-card-image{
+      margin: 0 !important;
+  }
+  

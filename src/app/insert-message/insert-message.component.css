@@ -1,0 +1,15 @@
+mat-card.insert-message-card.mat-card {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  width: 100%;
+}
+
+div.mat-form-field-wrapper {
+  width: 80vw;
+}
+
+.inputField {
+  width: 100%;
+}
+/*# sourceMappingURL=insert-message.component.css.map */

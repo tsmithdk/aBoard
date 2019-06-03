@@ -1,0 +1,87 @@
+<mat-card class="single-card">
+  <div>
+    <div class="example-header-image">
+      <img
+        mat-card-image
+        src="https://robohash.org/{{ msg.user.username }}"
+        alt="Random"
+        class="profileImg"
+      />
+
+      <button mat-button routerLink="/users/profile/{{ msg.user._id }}">
+        {{ msg.user.username }}
+      </button>
+      <mat-card-subtitle>{{ msg.date | date }}</mat-card-subtitle>
+    </div>
+  </div>
+  <mat-card-content *ngIf="!isEditing">
+    <h2>{{ msg.title }}</h2>
+    <p>
+      {{ msg.content }}
+    </p>
+  </mat-card-content>
+  <mat-card-content *ngIf="isEditing">
+    <div>
+      <mat-form-field>
+        <input
+          [(ngModel)]="editedMessage.title"
+          matInput
+          class="example-full-width"
+          value="{{ editedMessage.title }}"
+        />
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field>
+        <textarea
+          [(ngModel)]="editedMessage.content"
+          matInput
+          class="example-full-width"
+          value="{{ editedMessage.content }}"
+        ></textarea>
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+  <img
+    mat-card-image
+    *ngIf="msg.image"
+    src="{{ msg.image }}"
+    alt="msg.title"
+    class="messageImg"
+  />
+  <div *ngIf="!msg.image"></div>
+
+  <mat-card-actions *ngIf="user?._id !== msg.user._id">
+    <button
+      [disabled]="!user || isMessageLiked"
+      (click)="likeMessage(user?._id)"
+      mat-icon-button
+    >
+      <mat-icon aria-label="Example icon-button with a heart icon"
+        >thumb_up</mat-icon
+      >
+      {{ msg.likes.length }}
+    </button>
+
+    <button
+      [disabled]="!user || isMessageDisliked"
+      (click)="dislikeMessage(user?._id)"
+      mat-icon-button
+      color="warn"
+    >
+      <mat-icon aria-label="Example icon-button with a heart icon"
+        >thumb_down</mat-icon
+      >
+      {{ msg.dislikes.length }}
+    </button>
+  </mat-card-actions>
+  <mat-card-actions *ngIf="user?._id === msg.user._id">
+    <button *ngIf="!isEditing" mat-button (click)="editMessage()">
+      EDIT
+    </button>
+    <button *ngIf="isEditing" mat-button (click)="updateMessage()">
+      SAVE
+    </button>
+    <button mat-button (click)="deleteMessage(msg._id)">DELETE</button>
+  </mat-card-actions>
+</mat-card>

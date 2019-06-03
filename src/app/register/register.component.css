@@ -1,0 +1,27 @@
+.example-card {
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+mat-card-actions mat-card-subtitle {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+::ng-deep .mat-form-field .mat-form-field-infix {
+  width: 300px !important;
+}
+/*# sourceMappingURL=register.component.css.map */

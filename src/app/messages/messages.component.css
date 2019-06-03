@@ -1,0 +1,15 @@
+#messages {
+  display: -ms-grid;
+  display: grid;
+}
+
+app-single-message {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+mat-spinner {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=messages.component.css.map */
